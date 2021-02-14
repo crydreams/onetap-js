@@ -481,15 +481,15 @@ function onDraw() {
 }
 
 function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
-  }
-  
-  UI.AddSubTab(["Rage", "SUBTAB_MGR"], "spam slidewalk"), UI.AddCheckbox(["Rage", "spam slidewalk", "spam slidewalk"], "Break Prediction");
-  
-  function AnimationBreak() {
-      UI.GetValue(["Rage", "Break Prediction", "Break Prediction", "Break Prediction"]) && (trufalse = 4 * Math.abs(Math.sin(44 * Globals.Realtime())), trufalse > 3 && UI.SetValue(["Misc.", "Movement", "Leg movement"], 0), trufalse < 2 && UI.SetValue(["Misc.", "Movement", "Leg movement"], 2))
-  }
-  Cheat.RegisterCallback("CreateMove", "AnimationBreak")
+  return Math.random() * (max - min) + min;
+}
+
+UI.AddSubTab(["Rage", "SUBTAB_MGR"], "spam slidewalk"), UI.AddCheckbox(["Rage", "spam slidewalk", "spam slidewalk"], "Break Prediction");
+
+function AnimationBreak() {
+    UI.GetValue(["Rage", "spam slidewalk", "spam slidewalk", "Break Prediction"]) && (trufalse = 4 * Math.abs(Math.sin(44 * Globals.Realtime())), trufalse > 3 && UI.SetValue(["Misc.", "Movement", "Leg movement"], 0), trufalse < 2 && UI.SetValue(["Misc.", "Movement", "Leg movement"], 1))
+}
+Cheat.RegisterCallback("CreateMove", "AnimationBreak")
   
   
   UI.AddCheckbox(["Misc.", "View", "General"], "Pitch 0 on land");
